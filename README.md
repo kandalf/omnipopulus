@@ -1,24 +1,22 @@
 # OmniSocial
 
-A Rails engine for Twitter and Facebook logins using [OmniAuth](http://github.com/intridea/omniauth)
+A Rails 3 engine for Twitter and Facebook logins using [OmniAuth](http://github.com/intridea/omniauth)
 
 ## Installation
 
-OmniSocial requires Rails 3.
+To use OmniSocial in a Rails 3 application:
 
-To use OmniSocial in a Rails application, simply require it in the Gemfile:
+1. Require it in the Gemfile: `gem 'omnisocial'`
 
-    gem 'omnisocial'
+2. Install it by running `bundle`.
 
-Then install it by running `bundle`.
+3. Run `rails g omnisocial` to copy an initializer, database migration and some CSS and image assets into your base application directory.
 
-Once this is done, run `rails g omnisocial` to copy an initializer, database migration and some CSS and image assets into your base application directory.
+4. Edit `config/initializers/omnisocial.rb` and include your application's Twitter and Facebook OAuth configuration.
 
-Then edit `config/initializers/omnisocial.rb` and include your application's Twitter and Facebook OAuth configuration.
+5. Run `rake db:migrate` to create the user and login_account tables.
 
-Then run `rake db:migrate` to create the user and login_account tables.
-
-Finally, test that the logins work by accessing `/login` inside your application.
+6. Test that the logins work by accessing `/login` inside your application.
 
 ## Copyright & License
 
