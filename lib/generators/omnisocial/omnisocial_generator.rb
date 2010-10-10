@@ -30,6 +30,10 @@ module Omnisocial
         template 'omnisocial.rb', 'config/initializers/omnisocial.rb'
       end
       
+      def copy_user_model
+        template 'user.rb', 'app/models/user.rb'
+      end
+      
       def copy_assets
         copy_file 'assets/stylesheets/omnisocial.css',  'public/stylesheets/omnisocial.css'
         copy_file 'assets/images/twitter.gif',          'public/images/omnisocial/twitter.gif'

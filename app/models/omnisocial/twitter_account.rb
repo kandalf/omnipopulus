@@ -1,7 +1,6 @@
 module Omnisocial
   class TwitterAccount < LoginAccount
     def assign_account_info(auth_hash)
-      p auth_hash
       self.remote_account_id  = auth_hash['uid']
       self.login              = auth_hash['user_info']['nickname']
       self.picture_url        = auth_hash['user_info']['image']
