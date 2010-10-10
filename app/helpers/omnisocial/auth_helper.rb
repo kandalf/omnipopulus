@@ -5,11 +5,11 @@ module Omnisocial
     end
     
     def big_twitter_login_button
-      content_tag(:a, content_tag(:span, 'Sign in with Twitter'), :class => 'twitter', :href => auth_request_path(:service => 'twitter'))
+      content_tag(:a, content_tag(:span, 'Sign in with Twitter'), :class => 'omnisocial-button twitter', :href => auth_request_path(:service => 'twitter'))
     end
   
     def big_facebook_login_button
-      content_tag(:a, content_tag(:span, 'Sign in with Facebook'), :class => 'facebook', :href => auth_request_path(:service => 'facebook'))
+      content_tag(:a, content_tag(:span, 'Sign in with Facebook'), :class => 'omnisocial-button facebook', :href => auth_request_path(:service => 'facebook'))
     end
     
     def twitter_login_button
