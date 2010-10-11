@@ -18,6 +18,8 @@ To use OmniSocial in a Rails 3 application:
 
 6. Test that the logins work by accessing `/login` inside your application.
 
+Some more detailed installation instructions are in the [project announcement article](http://icelab.com.au/articles/welcome-to-the-omnisocial/).
+
 ## Copyright & License
 
 OmniSocial is Copyright (c) 2010 [Tim Riley](http://openmonkey.com/) and [Icelab](http://icelab.com.au/), and is released under MIT License.
