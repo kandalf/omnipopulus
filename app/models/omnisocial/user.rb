@@ -1,7 +1,7 @@
 module Omnisocial
   class User < ActiveRecord::Base
     has_one :login_account, :class_name => 'Omnisocial::LoginAccount', :dependent => :destroy
-    delegate :login, :name, :picture_url, :account_url, :to => :login_account
+    delegate :login, :name, :picture_url, :account_url, :access_token, :to => :login_account
   
     def to_param
       if !self.login.include?('profile.php?')
