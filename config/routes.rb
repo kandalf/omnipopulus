@@ -1,4 +1,4 @@
-Rails::Application.routes.draw do
+Rails.application.routes.draw do
   match '/login'                  => 'omnisocial/auth#new',      :as => :login
   match '/auth/:service/callback' => 'omnisocial/auth#callback'
   match '/auth/failure'           => 'omnisocial/auth#failure'
