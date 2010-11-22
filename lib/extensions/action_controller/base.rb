@@ -3,33 +3,33 @@ class ActionController::Base
     raise Exception, "require_user cannot be called on ActionController::Base. Only it's subclasses" if self ==  ActionController::Base
     prepend_before_filter :require_user, options
   end
-  
+
   helper_method :current_user, :current_user?
 
   protected
-  
+
   # Filters
-  
+
   def require_user
     current_user.present? || deny_access
   end
-  
+
   # Utils
-  
+
   def store_location
     session[:return_to] = request.fullpath
   end
-  
+
   def deny_access
     store_location
     redirect_to login_path
   end
-  
+
   def redirect_back_or_default(default)
     redirect_to(session[:return_to] || default)
     session[:return_to] = nil
   end
-  
+
   def current_user
     @current_user ||= if session[:user_id]
       User.find(session[:user_id])
@@ -39,11 +39,11 @@ class ActionController::Base
       false
     end
   end
-  
+
   def current_user?
     !!current_user
   end
-  
+
   def current_user=(user)
     user.tap do |user|
       user.remember
@@ -51,12 +51,12 @@ class ActionController::Base
       cookies[:remember_token]  = user.remember_token
     end
   end
-  
+
   def logout!
     session[:user_id] = nil
     @current_user     = nil
     cookies.delete(:remember_token)
     session[:return_to] = nil
   end
-  
+
 end

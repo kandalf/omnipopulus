@@ -3,10 +3,10 @@ class CreateOmnisocialTables < ActiveRecord::Migration
     create_table :users do |t|
       t.string :remember_token
       # Any additional fields here
-      
+
       t.timestamps
     end
-    
+
     create_table :login_accounts do |t|
       t.string :type
       t.string :user_id
@@ -14,11 +14,11 @@ class CreateOmnisocialTables < ActiveRecord::Migration
       t.string :name
       t.string :login
       t.string :picture_url
-      # Any additional fields here 
-      
+      # Any additional fields here
+
       t.timestamps
     end
-    
+
     add_index :login_accounts, :user_id
     add_index :login_accounts, :type
   end

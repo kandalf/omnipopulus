@@ -6,7 +6,7 @@ module Omnisocial
       self.picture_url        = auth_hash['user_info']['image']
       self.name               = auth_hash['user_info']['name']
     end
-  
+
     def account_url
       "http://twitter.com/#{self.login}"
     end
