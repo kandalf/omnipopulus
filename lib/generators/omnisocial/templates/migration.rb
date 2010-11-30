@@ -9,7 +9,7 @@ class CreateOmnisocialTables < ActiveRecord::Migration
     
     create_table :login_accounts do |t|
       t.string :type
-      t.string :user_id
+      t.integer :user_id
       t.string :remote_account_id
       t.string :name
       t.string :login
