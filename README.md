@@ -20,6 +20,11 @@ To use OmniSocial in a Rails 3 application:
 
 Some more detailed installation instructions are in the [project announcement article](http://icelab.com.au/articles/welcome-to-the-omnisocial/).
 
+## Contributors
+
+* [Klaus Hartl](http://github.com/carhartl)
+* [Stephen Aument](http://github.com/stephenaument)
+
 ## Copyright & License
 
 OmniSocial is Copyright (c) 2010 [Tim Riley](http://openmonkey.com/) and [Icelab](http://icelab.com.au/), and is released under MIT License.
