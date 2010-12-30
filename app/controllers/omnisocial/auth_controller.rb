@@ -17,7 +17,7 @@ module Omnisocial
         when 'facebook' then
           Omnisocial::FacebookAccount.find_or_create_from_auth_hash(request.env['rack.auth'])
         when 'linked_in' then
-          Omnisocial::LinkedInAccount.find_or create_from_auth_hash(request.env['rack.auth'])
+          Omnisocial::LinkedInAccount.find_or_create_from_auth_hash(request.env['rack.auth'])
       end
     
       self.current_user = account.find_or_create_user
