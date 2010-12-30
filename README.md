@@ -1,6 +1,6 @@
 # OmniSocial
 
-A Rails 3 engine for Twitter and Facebook logins using [OmniAuth](http://github.com/intridea/omniauth)
+A Rails 3 engine for Twitter, Facebook and LinkedIn logins using [OmniAuth](http://github.com/intridea/omniauth)
 
 ## Installation
 
