@@ -19,5 +19,14 @@ module Omnisocial
     def facebook_login_button
       content_tag(:a, content_tag(:img, :src => '/images/omnisocial/signin_facebook.png', :alt => 'Sign in with Facebook'), :href => auth_request_path(:service => 'facebook'))
     end
+
+    def linkedin_login_button
+      content_tag(:a, content_tag(:img, :src => '/images/omnisocial/signin_linked_in.png', :alt => 'Sign in with LinkeIn'), :href => auth_request_path(:service => 'linked_in'))
+    end
+
+    def big_facebook_login_button
+      content_tag(:a, content_tag(:span, 'Sign in with LinkedIn'), :class => 'omnisocial-button linkedin', :href => auth_request_path(:service => 'linked_in'))
+    end
+
   end
 end

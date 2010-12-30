@@ -19,6 +19,10 @@ module Omnisocial
       login_account.kind_of? FacebookAccount
     end
 
+    def from_linked_in?
+      login_account.kind_of? LinkedInAccount
+    end
+
     def remember
       update_attributes(:remember_token => ::BCrypt::Password.create("#{Time.now}-#{self.login_account.type}-#{self.login}")) unless new_record?
     end
