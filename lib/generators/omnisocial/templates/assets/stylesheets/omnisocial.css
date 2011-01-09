@@ -63,6 +63,18 @@ a.omnisocial-button.facebook {
   height: 255px;
   width: 200px;
 }
+a.omnisocial-button.linkedin {
+  background: url(/images/omnisocial/linkedin.png) center center no-repeat;
+  float: left;
+  margin-left: 40px;
+  height: 255px;
+  width: 200px;
+}
+
+a.omnisocial-button.linkedin span {
+  margin: 240px 0 0 11px;
+}
+
 a.omnisocial-button.facebook span {
   margin: 240px 0 0 11px;
 }

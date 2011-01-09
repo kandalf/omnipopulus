@@ -40,6 +40,8 @@ module Omnisocial
         copy_file 'assets/images/facebook.png',         'public/images/omnisocial/facebook.png'
         copy_file 'assets/images/signin_twitter.png',   'public/images/omnisocial/signin_twitter.png'
         copy_file 'assets/images/signin_facebook.png',  'public/images/omnisocial/signin_facebook.png'
+        copy_file 'assets/images/linkedin.png',         'public/images/omnisocial/linkeding.png'
+        copy_file 'assets/images/signin_linkedin.jpg',  'public/images/omnisocial/signin_linkedin.jpg'
       end
 
       def show_readme

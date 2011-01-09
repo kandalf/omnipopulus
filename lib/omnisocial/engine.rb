@@ -27,6 +27,12 @@ module Omnisocial
           Omnisocial.service_configs[:facebook].app_secret,
           Omnisocial.service_configs[:facebook].options
       end
+
+      if Omnisocial.service_configs[:linked_in]
+        config.app_middleware.use ::OmniAuth::Strategies::LinkedIn,
+          Omnisocial.service_configs[:linked_in].app_key,
+          Omnisocial.service_configs[:linked_in].app_secret
+      end
     end
 
   end
