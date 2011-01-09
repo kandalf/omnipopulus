@@ -9,11 +9,11 @@ require 'bcrypt'
 
 module Omnisocial
   class Engine < Rails::Engine
-    
+
     config.to_prepare do
       ApplicationController.helper(Omnisocial::AuthHelper)
     end
-    
+
     initializer 'omnisocial.load_middleware', :after=> :load_config_initializers do
       if Omnisocial.service_configs[:twitter]
         config.app_middleware.use ::OmniAuth::Strategies::Twitter,
@@ -22,12 +22,12 @@ module Omnisocial
       end
 
       if Omnisocial.service_configs[:facebook]
-        config.app_middleware.use ::OmniAuth::Strategies::Facebook, 
+        config.app_middleware.use ::OmniAuth::Strategies::Facebook,
           Omnisocial.service_configs[:facebook].app_key,
           Omnisocial.service_configs[:facebook].app_secret,
           Omnisocial.service_configs[:facebook].options
       end
     end
-    
+
   end
 end
