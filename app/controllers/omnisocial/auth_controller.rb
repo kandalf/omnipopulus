@@ -20,7 +20,7 @@ module Omnisocial
     
       self.current_user = account.find_or_create_user
       
-      flash[:message] = 'You have logged in successfully.'
+      flash[:notice] = 'You have logged in successfully.'
       redirect_back_or_default(root_path)
     end
   
