@@ -15,6 +15,7 @@ class CreateOmnisocialTables < ActiveRecord::Migration
       t.string :login
       t.string :picture_url
       t.string :access_token
+      t.string :access_token_secret
       # Any additional fields here 
 
       t.timestamps
@@ -23,7 +24,6 @@ class CreateOmnisocialTables < ActiveRecord::Migration
     add_index :login_accounts, :user_id
     add_index :login_accounts, :type
 
-    add_column :login_accounts, :access_token_secret, :string
   end
 
   def self.down
