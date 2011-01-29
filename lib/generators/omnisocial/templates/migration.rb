@@ -22,6 +22,8 @@ class CreateOmnisocialTables < ActiveRecord::Migration
 
     add_index :login_accounts, :user_id
     add_index :login_accounts, :type
+
+    add_column :login_accounts, :access_token_secret, :string
   end
 
   def self.down
