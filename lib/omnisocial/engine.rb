@@ -35,7 +35,7 @@ module Omnisocial
       end
 
       if Omnisocial.service_configs[:github]
-        config.app_middleware.use ::OmniAuth::Strategies::Github,
+        config.app_middleware.use ::OmniAuth::Strategies::GitHub,
           Omnisocial.service_configs[:github].app_key,
           Omnisocial.service_configs[:github].app_secret
       end
