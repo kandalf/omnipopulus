@@ -33,7 +33,7 @@ module Omnisocial
     end
 
     def big_github_login_button
-      content_tag(:a, content_tag(:span, 'Sign in with Github'), :class => 'omnisocial-button github', :href => auth_request_path(:service => 'github')
+      content_tag(:a, content_tag(:span, 'Sign in with Github'), :class => 'omnisocial-button github', :href => auth_request_path(:service => 'github'))
     end
   end
 end
