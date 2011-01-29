@@ -22,6 +22,10 @@ module Omnisocial
     @@service_configs[:linked_in] = Omnisocial::ServiceConfig.new(app_key, app_secret, options)
   end
 
+  def self.github(app_key, app_secret, options ={})
+    @@service_configs[:github] = Omnisocial::ServiceConfig.new(app_key, app_secret, options)
+  end
+
   require 'omnisocial/engine' if defined?(Rails) && Rails::VERSION::MAJOR == 3
 end
 
