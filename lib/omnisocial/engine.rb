@@ -33,6 +33,12 @@ module Omnisocial
           Omnisocial.service_configs[:linked_in].app_key,
           Omnisocial.service_configs[:linked_in].app_secret
       end
+
+      if Omnisocial.service_configs[:github]
+        config.app_middleware.use ::OmniAuth::Strategies::GitHub,
+          Omnisocial.service_configs[:github].app_key,
+          Omnisocial.service_configs[:github].app_secret
+      end
     end
 
   end

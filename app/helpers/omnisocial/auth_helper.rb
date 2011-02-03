@@ -28,5 +28,12 @@ module Omnisocial
       content_tag(:a, content_tag(:span, 'Sign in with LinkedIn'), :class => 'omnisocial-button linkedin', :href => auth_request_path(:service => 'linked_in'))
     end
 
+    def github_login_button
+        content_tag(:a, content_tag(:img, :src => '/images/omnisocial/signin_github.png', :alt => 'Sign in with Github'), :href => auth_request_path(:service => 'github'))
+    end
+
+    def big_github_login_button
+      content_tag(:a, content_tag(:span, 'Sign in with Github'), :class => 'omnisocial-button github', :href => auth_request_path(:service => 'github'))
+    end
   end
 end

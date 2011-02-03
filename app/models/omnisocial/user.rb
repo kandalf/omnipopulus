@@ -25,6 +25,10 @@ module Omnisocial
       login_account.kind_of? LinkedInAccount
     end
 
+    def from_github?
+      login_account.kind_of? GithubAccount
+    end
+
     def remember
       update_attributes(:remember_token => ::BCrypt::Password.create("#{Time.now}-#{self.login_account.type}-#{self.login}")) unless new_record?
     end
