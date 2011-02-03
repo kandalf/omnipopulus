@@ -6,29 +6,7 @@ class ActionController::Base
 
   helper_method :current_user, :current_user?
 
-  def current_user
-    @current_user ||= if session[:user_id]
-      User.find(session[:user_id])
-    elsif cookies[:remember_token]
-      User.find_by_remember_token(cookies[:remember_token])
-    else
-      false
-    end
-  end
-
-  def current_user?
-    !!current_user
-  end
-
-  def current_user=(user)
-    user.tap do |user|
-      user.remember
-      session[:user_id]         = user.id
-      cookies[:remember_token]  = user.remember_token
-    end
-  end
-  
-	protected
+  protected
 
   # Filters
 
@@ -50,6 +28,28 @@ class ActionController::Base
   def redirect_back_or_default(default)
     redirect_to(session[:return_to] || default)
     session[:return_to] = nil
+  end
+
+  def current_user
+    @current_user ||= if session[:user_id]
+      User.find(session[:user_id])
+    elsif cookies[:remember_token]
+      User.find_by_remember_token(cookies[:remember_token])
+    else
+      false
+    end
+  end
+
+  def current_user?
+    !!current_user
+  end
+
+  def current_user=(user)
+    user.tap do |user|
+      user.remember
+      session[:user_id]         = user.id
+      cookies[:remember_token]  = user.remember_token
+    end
   end
 
   def logout!
