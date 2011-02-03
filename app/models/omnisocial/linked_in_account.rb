@@ -5,6 +5,7 @@ module Omnisocial
       self.picture_url         = auth_hash['user_info']['image']
       self.name                = auth_hash['user_info']['first_name']
       self.access_token        = auth_hash['credentials']['token']
+      self.access_token_secret = auth_hash['credentials']['secret']
     end
   
     def account_url
