@@ -13,7 +13,7 @@ module Omnisocial
     def callback
       account = case request.env['rack.auth']['provider']
         when 'twitter' then
-            Omnisocial::TwitterAccount.find_or_create_from_auth_hash(request.env['rack.auth'])
+          Omnisocial::TwitterAccount.find_or_create_from_auth_hash(request.env['rack.auth'])
         when 'facebook' then
           Omnisocial::FacebookAccount.find_or_create_from_auth_hash(request.env['rack.auth'])
         when 'linked_in' then
