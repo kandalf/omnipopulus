@@ -25,7 +25,8 @@ Some more detailed installation instructions are in the [project announcement ar
 * [Klaus Hartl](http://github.com/carhartl)
 * [Stephen Aument](http://github.com/stephenaument)
 * [Lucas Allan](http://github.com/lucasallan)
-* [James Dumay](https://github.com/i386)
+* [James Dumay](http://github.com/i386)
+* [Pablo Dejuan](http://github.com/pdjota)
 
 ## Copyright & License
 
