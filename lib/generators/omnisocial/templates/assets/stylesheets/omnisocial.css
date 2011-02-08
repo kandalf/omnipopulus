@@ -47,46 +47,38 @@ a:hover.omnisocial-button span {
 }
 
 a.omnisocial-button.twitter {
-  background: url(/images/omnisocial/twitter.gif) center center no-repeat;
   float: left;
   height: 255px;
   width: 200px;
 }
-a.omnisocial-button.twitter span {
-  margin: 240px 0 0 25px;
-}
-
 a.omnisocial-button.facebook {
-  background: url(/images/omnisocial/facebook.png) center center no-repeat;
   float: left;
   margin-left: 40px;
   height: 255px;
   width: 200px;
 }
 a.omnisocial-button.linkedin {
-  background: url(/images/omnisocial/linkedin.png) center center no-repeat;
   float: left;
   margin-left: 40px;
   height: 255px;
   width: 200px;
 }
-
 a.omnisocial-button.github {
-  background: url(/images/omnisocial/github.png) center center no-repeat;
   float: left;
   margin-left: 40px;
   height: 255px;
   width: 200px;
 }
 
-a.omnisocial-button.linkedin span {
-  margin: 240px 0 0 11px;
+a.omnisocial-button.twitter span {
+  margin: 240px 0 0 25px;
 }
-
 a.omnisocial-button.facebook span {
   margin: 240px 0 0 11px;
 }
-
+a.omnisocial-button.linkedin span {
+  margin: 240px 0 0 11px;
+}
 a.omnisocial-button.github span {
   margin: 240px 0 0 11px;
 }
