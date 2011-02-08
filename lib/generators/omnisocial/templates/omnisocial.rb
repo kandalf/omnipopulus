@@ -5,6 +5,12 @@ Omnisocial.setup do |config|
 
   # ==> Facebook
   # config.facebook 'APP_KEY', 'APP_SECRET', :scope => 'publish_stream'
+  
+  # ==> GitHub
+  # config.github 'APP_KEY', 'APP_SECRET'
+  
+  # ==> LinkedIn
+  # config.linked_in 'APP_KEY', 'APP_SECRET'
 
   if Rails.env.production?
 
