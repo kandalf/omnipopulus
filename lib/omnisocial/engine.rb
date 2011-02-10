@@ -14,7 +14,7 @@ module Omnisocial
       ApplicationController.helper(Omnisocial::AuthHelper)
     end
 
-    initializer 'omnisocial.load_middleware', :after=> :load_config_initializers do
+    initializer 'omnisocial.load_middleware', :after => :load_config_initializers do
       if Omnisocial.service_configs[:twitter]
         config.app_middleware.use ::OmniAuth::Strategies::Twitter,
           Omnisocial.service_configs[:twitter].app_key,
