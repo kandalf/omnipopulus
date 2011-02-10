@@ -35,8 +35,6 @@ class ActionController::Base
       User.find(session[:user_id])
     elsif cookies[:remember_token]
       User.find_by_remember_token(cookies[:remember_token])
-    else
-      false
     end
   end
 
