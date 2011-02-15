@@ -1,40 +1,30 @@
-#omnisocial-login {
-  overflow: hidden;
-}
-
-#omnisocial-login .information {
-  float: left;
-  margin-right: 40px;
-  width: 450px;
-}
-
 a.omnisocial-button {
+  float: left;
   text-decoration: none;
+  margin-left: 20px;
+  margin-right: 20px;
 }
+a.omnisocial-button.twitter {
+  margin-left: 0;
+}
+
 a.omnisocial-button span {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  border-width: 1px;
-  border-style: solid;
-  font-weight: bold;
-  font-family: Helvetica, Arial, Verdana, sans-serif;
-  font-size: 16px;
-  cursor: pointer;
   display: inline-block;
-  line-height: 1;
   margin-top: 1px;
   padding: 8px 10px 9px;
-  position: relative;
-  text-decoration: none;
-  text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0px;
+  border: 1px solid #bbe2f8;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;  
   background: #3583cf;
   background: -webkit-gradient(linear, left top, left bottom, from(#629ed9), to(#3583cf));
-  border-color: #bbe2f8;
-  color: white;
-  float: none;
+  font-weight: bold;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
   font-size: 18px;
-  position: absolute;
+  line-height: 1;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0px;
+  cursor: pointer;
 }
 a:hover.omnisocial-button span {
   text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0px;
@@ -45,41 +35,4 @@ a:hover.omnisocial-button span {
   -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px 0;
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px 0;
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px 0;
-}
-
-a.omnisocial-button.twitter {
-  float: left;
-  height: 255px;
-  width: 200px;
-}
-a.omnisocial-button.facebook {
-  float: left;
-  margin-left: 40px;
-  height: 255px;
-  width: 200px;
-}
-a.omnisocial-button.linkedin {
-  float: left;
-  margin-left: 40px;
-  height: 255px;
-  width: 200px;
-}
-a.omnisocial-button.github {
-  float: left;
-  margin-left: 40px;
-  height: 255px;
-  width: 200px;
-}
-
-a.omnisocial-button.twitter span {
-  margin: 240px 0 0 25px;
-}
-a.omnisocial-button.facebook span {
-  margin: 240px 0 0 11px;
-}
-a.omnisocial-button.linkedin span {
-  margin: 240px 0 0 11px;
-}
-a.omnisocial-button.github span {
-  margin: 240px 0 0 11px;
 }
