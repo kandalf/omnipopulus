@@ -13,7 +13,6 @@ Gem::Specification.new do |gem|
   gem.homepage      = 'http://github.com/icelab/omnisocial'
   gem.summary       = 'Twitter and Facebook logins for your Rails application.'
   gem.description   = 'Twitter and Facebook logins for your Rails application.'
-  gem.has_rdoc      = false
   gem.files         = %w(README.md) + Dir.glob('{lib,app,config}/**/*')
   gem.require_path  = 'lib'
   
