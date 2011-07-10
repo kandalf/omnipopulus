@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0'
+gem 'rails', '3.1.0rc4'
 
 gem 'oa-core',      :require => 'omniauth/core'
 gem 'oa-oauth',     :require => 'omniauth/oauth'
