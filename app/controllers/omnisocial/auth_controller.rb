@@ -11,15 +11,15 @@ module Omnisocial
     end
 
     def callback
-      account = case request.env['rack.auth']['provider']
+      account = case request.env['omniauth.auth']['provider']
         when 'twitter' then
-          Omnisocial::TwitterAccount.find_or_create_from_auth_hash(request.env['rack.auth'])
+          Omnisocial::TwitterAccount.find_or_create_from_auth_hash(request.env['omniauth.auth'])
         when 'facebook' then
-          Omnisocial::FacebookAccount.find_or_create_from_auth_hash(request.env['rack.auth'])
+          Omnisocial::FacebookAccount.find_or_create_from_auth_hash(request.env['omniauth.auth'])
         when 'linked_in' then
-          Omnisocial::LinkedInAccount.find_or_create_from_auth_hash(request.env['rack.auth'])
+          Omnisocial::LinkedInAccount.find_or_create_from_auth_hash(request.env['omniauth.auth'])
         when 'github' then
-          Omnisocial::GithubAccount.find_or_create_from_auth_hash(request.env['rack.auth'])
+          Omnisocial::GithubAccount.find_or_create_from_auth_hash(request.env['omniauth.auth'])
       end
 
       self.current_user = account.find_or_create_user
