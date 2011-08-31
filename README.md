@@ -27,6 +27,7 @@ Some more detailed installation instructions are in the [project announcement ar
 * [Lucas Allan](http://github.com/lucasallan)
 * [James Dumay](http://github.com/i386)
 * [Pablo Dejuan](http://github.com/pdjota)
+* [Chris Oliver](http://github.com/excid3)
 
 ## Copyright & License
 

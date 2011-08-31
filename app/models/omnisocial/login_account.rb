@@ -1,6 +1,7 @@
 module Omnisocial
   class LoginAccount < ActiveRecord::Base
     belongs_to :user
+    serialize :auth_hash
 
     def self.find_or_create_from_auth_hash(auth_hash)
       if (account = find_by_remote_account_id(auth_hash['uid']))

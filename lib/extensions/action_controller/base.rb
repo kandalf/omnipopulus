@@ -4,7 +4,7 @@ class ActionController::Base
     prepend_before_filter :require_user, options
   end
 
-  helper_method :current_user, :current_user?
+  helper_method :current_user, :user_signed_in?, :current_user?
 
   protected
 
@@ -38,9 +38,11 @@ class ActionController::Base
     end
   end
 
-  def current_user?
+  def user_signed_in?
     !!current_user
   end
+
+  alias_method :current_user?, :user_signed_in?
 
   def current_user=(user)
     user.tap do |user|
