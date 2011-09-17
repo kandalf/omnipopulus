@@ -1,4 +1,4 @@
-module Omnisocial
+module Omnipopulus
   class LoginAccount < ActiveRecord::Base
     belongs_to :user
     serialize :auth_hash

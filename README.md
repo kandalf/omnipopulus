@@ -1,18 +1,18 @@
-# OmniSocial
+# OmniPopulus
 
-A Rails 3 engine for Twitter, Facebook and LinkedIn logins using [OmniAuth](http://github.com/intridea/omniauth)
+OmniPopulus (formerly known as OmniSocial) is a Rails 3 engine for Twitter, Facebook, GitHub and LinkedIn logins using [OmniAuth](http://github.com/intridea/omniauth).
 
 ## Installation
 
-To use OmniSocial in a Rails 3 application:
+To use OmniPopulus in a Rails 3 application:
 
-1. Require it in the Gemfile: `gem 'omnisocial'`
+1. Require it in the Gemfile: `gem 'omnipopulus'`
 
 2. Install it by running `bundle`.
 
-3. Run `rails g omnisocial` to copy an initializer, database migration and some CSS and image assets into your base application directory.
+3. Run `rails generate omnipopulus` to copy an initializer and database migration your application.
 
-4. Edit `config/initializers/omnisocial.rb` and include your application's Twitter and Facebook OAuth configuration.
+4. Edit `config/initializers/omnipopulus.rb` and include your application's OAuth configurations.
 
 5. Run `rake db:migrate` to create the user and login_account tables.
 
@@ -31,4 +31,4 @@ Some more detailed installation instructions are in the [project announcement ar
 
 ## Copyright & License
 
-OmniSocial is Copyright (c) 2010-2011 [Tim Riley](http://openmonkey.com/) and [Icelab](http://icelab.com.au/), and is released under MIT License.
+OmniPopulus is Copyright (c) 2010-2011 [Tim Riley](http://openmonkey.com/) and [Icelab](http://icelab.com.au/), and is released under MIT License.

@@ -1,6 +1,6 @@
 require 'digest/md5'
 
-module Omnisocial
+module Omnipopulus
   class GithubAccount < LoginAccount
     def assign_account_info(auth_hash)
       self.remote_account_id  = auth_hash['uid']

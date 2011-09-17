@@ -1,12 +1,12 @@
 require 'rails/generators'
 require 'rails/generators/migration'
 
-module Omnisocial
+module Omnipopulus
   module Generators
-    class OmnisocialGenerator < Rails::Generators::Base
+    class OmnipopulusGenerator < Rails::Generators::Base
       include Rails::Generators::Migration
 
-      desc 'Creates an omnisocial initializer and migration, and copies image and CSS assets.'
+      desc 'Creates an omnipopulus initializer and migration.'
 
       def self.source_root
         File.join(File.dirname(__FILE__), 'templates')
@@ -22,11 +22,11 @@ module Omnisocial
       end
 
       def create_migration_file
-        migration_template 'migration.rb', 'db/migrate/create_omnisocial_tables.rb'
+        migration_template 'migration.rb', 'db/migrate/create_omnipopulus_tables.rb'
       end
 
       def copy_initializer
-        template 'omnisocial.rb', 'config/initializers/omnisocial.rb'
+        template 'omnipopulus.rb', 'config/initializers/omnipopulus.rb'
       end
 
       def copy_user_model

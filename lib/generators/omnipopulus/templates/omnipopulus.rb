@@ -1,4 +1,4 @@
-Omnisocial.setup do |config|
+Omnipopulus.setup do |config|
 
   # ==> Twitter
   # config.twitter 'APP_KEY', 'APP_SECRET'

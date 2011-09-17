@@ -1,3 +1,3 @@
-class User < Omnisocial::User
+class User < Omnipopulus::User
   # Make any customisations here
 end
