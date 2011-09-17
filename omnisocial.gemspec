@@ -18,5 +18,5 @@ Gem::Specification.new do |gem|
   
   gem.add_dependency 'oa-core', "~> 0.2.6"
   gem.add_dependency 'oa-oauth', "~> 0.2.6"
-  gem.add_dependency 'bcrypt-ruby', "~> 2.1.4"
+  gem.add_dependency 'bcrypt-ruby'
 end
