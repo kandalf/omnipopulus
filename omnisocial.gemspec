@@ -16,6 +16,7 @@ Gem::Specification.new do |gem|
   gem.files         = %w(README.md) + Dir.glob('{lib,app,config}/**/*')
   gem.require_path  = 'lib'
   
+  gem.add_dependency 'rails', '>= 3.0.0'
   gem.add_dependency 'oa-core', "~> 0.2.6"
   gem.add_dependency 'oa-oauth', "~> 0.2.6"
   gem.add_dependency 'bcrypt-ruby'
