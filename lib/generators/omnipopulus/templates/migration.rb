@@ -9,7 +9,6 @@ class CreateOmnipopulusTables < ActiveRecord::Migration
       end
     else
       add_column(:users, :remember_token, :string)  unless column_exists?(:users, :remember_token)
-      add_column(:users, :email, :string)  unless column_exists?(:users, :email)
     end
 
     unless table_exists? :login_accounts
