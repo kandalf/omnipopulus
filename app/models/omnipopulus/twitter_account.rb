@@ -10,7 +10,7 @@ module Omnipopulus
     end
 
     def account_url
-      "http://twitter.com/#{self.login}"
+      "https://twitter.com/#{self.login}"
     end
   end
 end
